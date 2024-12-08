@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Nature</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #eaf7e6;
+    }
+    header {
+      background-color: #3ba672;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .section {
+      padding: 20px;
+      text-align: center;
+    }
+    .slider {
+      display: flex;
+      overflow-x: scroll;
+      gap: 10px;
+      padding: 10px;
+    }
+    .slider img {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+    }
+    .videos {
+      background-color: #fff8e1;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 800px;
+    }
+    .videos iframe {
+      width: 100%;
+      height: 300px;
+      margin-top: 15px;
+    }
+    .details {
+      background-color: #d1f5d3;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 800px;
+      text-align: center;
+    }
+    .colorful-section {
+      background: linear-gradient(45deg, #f6d365, #fda085);
+      padding: 40px;
+      color: white;
+      text-align: center;
+    }
+    a {
+      color: #3ba672;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #3ba672;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    .nav-buttons {
+      margin: 20px 0;
+    }
+    .nav-buttons button {
+      background-color: #3ba672;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .nav-buttons button:hover {
+      background-color: #2d864d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Explore the Beauty of Nature</h1>
+  </header>
+  
+  <div class="section">
+    <h2>Nature's Wonders</h2>
+    <p>Discover the beauty and importance of nature in preserving life on Earth.</p>
+    <div class="slider">
+      <img src="nature1.jpg" alt="Nature 1">
+      <img src="nature2.jpg" alt="Nature 2">
+      <img src="nature3.jpg" alt="Nature 3">
+    </div>
+  </div>
+
+  <div class="videos">
+    <h2>Learn More about Nature</h2>
+    <iframe src="https://www.youtube.com/https://youtube.com/shorts/" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID2" allowfullscreen></iframe>
+  </div>
+
+  <div class="details">
+    <h2>About Me</h2>
+    <p>Hello! I'm passionate about nature and enjoy sharing its beauty with others.</p>
+    <p>Contact: your.email@example.com</p>
+    <div class="nav-buttons">
+      <button onclick="scrollToSection('colorful')">Explore the Colorful World</button>
+    </div>
+  </div>
+  
+  <div id="colorful" class="colorful-section">
+    <h2>The Colorful Side of Nature</h2>
+    <p>Experience the vibrant colors and serene beauty of nature like never before.</p>
+    <button onclick="scrollToSection('top')">Back to Top</button>
+  </div>
+  
+  <footer>
+    <p>© 2024 Explore Nature. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
